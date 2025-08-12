@@ -1,0 +1,166 @@
+SELECT nested_0."timestamp" AS "timestamp", unit_id, testrun_result, testplan_version, " K1_1B DUTY CYCLE at 0.0 mm", " K1_2B DUTY CYCLE at 0.0 mm", " K2_1B RELOS duty cycle in 0.01 percent at 0.0 mm", " K2_2B RELOS duty cycle in 0.01 percent at 0.0 mm", " K1_1B RELOS duty cycle in 0.01 percent at 1.8 mm", " K1_2B RELOS duty cycle in 0.01 percent at 1.8 mm", " K2_1B RELOS duty cycle in 0.01 percent at 1.8 mm", " K2_2B RELOS duty cycle in 0.01 percent at 1.8 mm", " K1_1B RELOS duty cycle in 0.01 percent at 3.75 mm", " K1_2B RELOS duty cycle in 0.01 percent at 3.75 mm", " K2_1B RELOS duty cycle in 0.01 percent at 3.75 mm", " K2_2B RELOS duty cycle in 0.01 percent at 3.75 mm", " K1_1B RELOS duty cycle in 0.01 percent at 5.63 mm", " K1_2B RELOS duty cycle in 0.01 percent at 5.63 mm", " K2_1B RELOS duty cycle in 0.01 percent at 5.63 mm", " K2_2B RELOS duty cycle in 0.01 percent at 5.63 mm", " K1_1B RELOS duty cycle in 0.01 percent at 7.5 mm", " K1_2B RELOS duty cycle in 0.01 percent at 7.5 mm", " K2_1B RELOS duty cycle in 0.01 percent at 7.5 mm", " K2_2B RELOS duty cycle in 0.01 percent at 7.5 mm", " K1_1B RELOS duty cycle in 0.01 percent at 9.38 mm", " K1_2B RELOS duty cycle in 0.01 percent at 9.38 mm", " K2_1B RELOS duty cycle in 0.01 percent at 9.38 mm", " K2_2B RELOS duty cycle in 0.01 percent at 9.38 mm", " K1_1B RELOS duty cycle in 0.01 percent at 11.25 mm", " K1_2B RELOS duty cycle in 0.01 percent at 11.25 mm", " K2_1B RELOS duty cycle in 0.01 percent at 11.25 mm", " K2_2B RELOS duty cycle in 0.01 percent at 11.25 mm", " K1_1B RELOS duty cycle in 0.01 percent at 13.13 mm", " K1_2B RELOS duty cycle in 0.01 percent at 13.13 mm", " K2_1B RELOS duty cycle in 0.01 percent at 13.13 mm", " K2_2B RELOS duty cycle in 0.01 percent at 13.13 mm", " K1_1B RELOS duty cycle in 0.01 percent at 15 mm", " K1_2B RELOS duty cycle in 0.01 percent at 15 mm", " K2_1B RELOS duty cycle in 0.01 percent at 15 mm", " K2_2B RELOS duty cycle in 0.01 percent at 15 mm", " K1_1B RELOS duty cycle in 0.01 percent at 16.88 mm", " K1_2B RELOS duty cycle in 0.01 percent at 16.88 mm", " K2_1B RELOS duty cycle in 0.01 percent at 16.88 mm", " K2_2B RELOS duty cycle in 0.01 percent at 16.88 mm", " K1_1B RELOS duty cycle in 0.01 percent at 18.75 mm", " K1_2B RELOS duty cycle in 0.01 percent at 18.75 mm", " K2_1B RELOS duty cycle in 0.01 percent at 18.75 mm", " K2_2B RELOS duty cycle in 0.01 percent at 18.75 mm", " K1_1B RELOS duty cycle in 0.01 percent at 20.63 mm", " K1_2B RELOS duty cycle in 0.01 percent at 20.63 mm", " K2_1B RELOS duty cycle in 0.01 percent at 20.63 mm", " K2_2B RELOS duty cycle in 0.01 percent at 20.63 mm", " K1_1B RELOS duty cycle in 0.01 percent at 22.5 mm", " K1_2B RELOS duty cycle in 0.01 percent at 22.5 mm", " K2_1B RELOS duty cycle in 0.01 percent at 22.5 mm", " K2_2B RELOS duty cycle in 0.01 percent at 22.5 mm", " K1_1B RELOS duty cycle in 0.01 percent at 24.38 mm", " K1_2B RELOS duty cycle in 0.01 percent at 24.38 mm", " K2_1B RELOS duty cycle in 0.01 percent at 24.38 mm", " K2_2B RELOS duty cycle in 0.01 percent at 24.38 mm", " K1_1B RELOS duty cycle in 0.01 percent at 26.25 mm", " K1_2B RELOS duty cycle in 0.01 percent at 26.25 mm", " K2_1B RELOS duty cycle in 0.01 percent at 26.25 mm", " K2_2B RELOS duty cycle in 0.01 percent at 26.25 mm", " K1_1B RELOS duty cycle in 0.01 percent at 28.13 mm", " K1_2B RELOS duty cycle in 0.01 percent at 28.13 mm", " K2_1B RELOS duty cycle in 0.01 percent at 28.13 mm", " K2_2B RELOS duty cycle in 0.01 percent at 28.13 mm", " K1_1B RELOS duty cycle in 0.01 percent at 30 mm", " K1_2B RELOS duty cycle in 0.01 percent at 30 mm", " K2_1B RELOS duty cycle in 0.01 percent at 30 mm", " K2_2B RELOS duty cycle in 0.01 percent at 30 mm", "TestStation(L0xS0x)", ChangeTiming
+FROM (
+    SELECT "timestamp", unit_id, "testrun_result","testplan_version",
+      "KC000014" as " K1_1B DUTY CYCLE at 0.0 mm",
+      "KC000017" as " K1_2B DUTY CYCLE at 0.0 mm",
+      "KC000024" as " K2_1B RELOS duty cycle in 0.01 percent at 0.0 mm",
+      "KC000027" as " K2_2B RELOS duty cycle in 0.01 percent at 0.0 mm",
+      "KC000034" as " K1_1B RELOS duty cycle in 0.01 percent at 1.8 mm",
+      "KC000037" as " K1_2B RELOS duty cycle in 0.01 percent at 1.8 mm",
+      "KC000044" as " K2_1B RELOS duty cycle in 0.01 percent at 1.8 mm",
+      "KC000047" as " K2_2B RELOS duty cycle in 0.01 percent at 1.8 mm",
+      "KC000054" as " K1_1B RELOS duty cycle in 0.01 percent at 3.75 mm",
+      "KC000057" as " K1_2B RELOS duty cycle in 0.01 percent at 3.75 mm",
+      "KC000064" as " K2_1B RELOS duty cycle in 0.01 percent at 3.75 mm",
+      "KC000067" as " K2_2B RELOS duty cycle in 0.01 percent at 3.75 mm",
+      "KC000074" as " K1_1B RELOS duty cycle in 0.01 percent at 5.63 mm",
+      "KC000077" as " K1_2B RELOS duty cycle in 0.01 percent at 5.63 mm",
+      "KC000084" as " K2_1B RELOS duty cycle in 0.01 percent at 5.63 mm",
+      "KC000087" as " K2_2B RELOS duty cycle in 0.01 percent at 5.63 mm",
+      "KC000094" as " K1_1B RELOS duty cycle in 0.01 percent at 7.5 mm",
+      "KC000097" as " K1_2B RELOS duty cycle in 0.01 percent at 7.5 mm",
+      "KC000104" as " K2_1B RELOS duty cycle in 0.01 percent at 7.5 mm",
+      "KC000107" as " K2_2B RELOS duty cycle in 0.01 percent at 7.5 mm",
+      "KC000114" as " K1_1B RELOS duty cycle in 0.01 percent at 9.38 mm",
+      "KC000117" as " K1_2B RELOS duty cycle in 0.01 percent at 9.38 mm",
+      "KC000124" as " K2_1B RELOS duty cycle in 0.01 percent at 9.38 mm",
+      "KC000127" as " K2_2B RELOS duty cycle in 0.01 percent at 9.38 mm",
+      "KC000134" as " K1_1B RELOS duty cycle in 0.01 percent at 11.25 mm",
+      "KC000137" as " K1_2B RELOS duty cycle in 0.01 percent at 11.25 mm",
+      "KC000144" as " K2_1B RELOS duty cycle in 0.01 percent at 11.25 mm",
+      "KC000147" as " K2_2B RELOS duty cycle in 0.01 percent at 11.25 mm",
+      "KC000154" as " K1_1B RELOS duty cycle in 0.01 percent at 13.13 mm",
+      "KC000157" as " K1_2B RELOS duty cycle in 0.01 percent at 13.13 mm",
+      "KC000164" as " K2_1B RELOS duty cycle in 0.01 percent at 13.13 mm",
+      "KC000167" as " K2_2B RELOS duty cycle in 0.01 percent at 13.13 mm",
+      "KC000174" as " K1_1B RELOS duty cycle in 0.01 percent at 15 mm",
+      "KC000177" as " K1_2B RELOS duty cycle in 0.01 percent at 15 mm",
+      "KC000184" as " K2_1B RELOS duty cycle in 0.01 percent at 15 mm",
+      "KC000187" as " K2_2B RELOS duty cycle in 0.01 percent at 15 mm",
+      "KC000194" as " K1_1B RELOS duty cycle in 0.01 percent at 16.88 mm",
+      "KC000197" as " K1_2B RELOS duty cycle in 0.01 percent at 16.88 mm",
+      "KC000204" as " K2_1B RELOS duty cycle in 0.01 percent at 16.88 mm",
+      "KC000207" as " K2_2B RELOS duty cycle in 0.01 percent at 16.88 mm",
+      "KC000214" as " K1_1B RELOS duty cycle in 0.01 percent at 18.75 mm",
+      "KC000217" as " K1_2B RELOS duty cycle in 0.01 percent at 18.75 mm",
+      "KC000224" as " K2_1B RELOS duty cycle in 0.01 percent at 18.75 mm",
+      "KC000227" as " K2_2B RELOS duty cycle in 0.01 percent at 18.75 mm",
+      "KC000234" as " K1_1B RELOS duty cycle in 0.01 percent at 20.63 mm",
+      "KC000237" as " K1_2B RELOS duty cycle in 0.01 percent at 20.63 mm",
+      "KC000244" as " K2_1B RELOS duty cycle in 0.01 percent at 20.63 mm",
+      "KC000247" as " K2_2B RELOS duty cycle in 0.01 percent at 20.63 mm",
+      "KC000254" as " K1_1B RELOS duty cycle in 0.01 percent at 22.5 mm",
+      "KC000257" as " K1_2B RELOS duty cycle in 0.01 percent at 22.5 mm",
+      "KC000264" as " K2_1B RELOS duty cycle in 0.01 percent at 22.5 mm",
+      "KC000267" as " K2_2B RELOS duty cycle in 0.01 percent at 22.5 mm",
+      "KC000274" as " K1_1B RELOS duty cycle in 0.01 percent at 24.38 mm",
+      "KC000277" as " K1_2B RELOS duty cycle in 0.01 percent at 24.38 mm",
+      "KC000284" as " K2_1B RELOS duty cycle in 0.01 percent at 24.38 mm",
+      "KC000287" as " K2_2B RELOS duty cycle in 0.01 percent at 24.38 mm",
+      "KC000294" as " K1_1B RELOS duty cycle in 0.01 percent at 26.25 mm",
+      "KC000297" as " K1_2B RELOS duty cycle in 0.01 percent at 26.25 mm",
+      "KC000304" as " K2_1B RELOS duty cycle in 0.01 percent at 26.25 mm",
+      "KC000307" as " K2_2B RELOS duty cycle in 0.01 percent at 26.25 mm",
+      "KC000314" as " K1_1B RELOS duty cycle in 0.01 percent at 28.13 mm",
+      "KC000317" as " K1_2B RELOS duty cycle in 0.01 percent at 28.13 mm",
+      "KC000324" as " K2_1B RELOS duty cycle in 0.01 percent at 28.13 mm",
+      "KC000327" as " K2_2B RELOS duty cycle in 0.01 percent at 28.13 mm",
+      "KC000334" as " K1_1B RELOS duty cycle in 0.01 percent at 30 mm",
+      "KC000337" as " K1_2B RELOS duty cycle in 0.01 percent at 30 mm",
+      "KC000344" as " K2_1B RELOS duty cycle in 0.01 percent at 30 mm",
+      "KC000347" as " K2_2B RELOS duty cycle in 0.01 percent at 30 mm",
+      "station" as "TestStation(L0xS0x)",
+      '' as "ChangeTiming"
+    From FlatTable.DEB.Advanced."DEB_STATION_DQ200RTCAL_L01S01_VAL_ALL"
+    WHERE 
+    testrun_result = 'P' AND
+    "KC000014" < 100 AND
+    "KC000017" < 100 AND
+    "KC000024" < 100 AND
+    "KC000027" < 100 AND (
+    "KC000014" NOT BETWEEN '14.17' AND '21.6' OR
+    "KC000017" NOT BETWEEN '6.18' AND '13.42' OR
+    "KC000024" NOT BETWEEN '14.17' AND '21.6' OR
+    "KC000027" NOT BETWEEN '6.18' AND '13.42' OR
+    
+    "KC000034" NOT BETWEEN '17.18' AND '24.53' OR
+    "KC000037" NOT BETWEEN '7.14' AND '14.42' OR
+    "KC000044" NOT BETWEEN '17.18' AND '24.53' OR
+    "KC000047" NOT BETWEEN '7.14' AND '14.42' OR
+    
+    "KC000054" NOT BETWEEN '21.22' AND '28.59' OR
+    "KC000057" NOT BETWEEN '8.26' AND '15.61' OR
+    "KC000064" NOT BETWEEN '21.22' AND '28.59' OR
+    "KC000067" NOT BETWEEN '8.26' AND '15.61' OR
+    
+    "KC000074" NOT BETWEEN '26.99' AND '34.3' OR
+    "KC000077" NOT BETWEEN '9.62' AND '17.02' OR
+    "KC000084" NOT BETWEEN '26.99' AND '34.3' OR
+    "KC000087" NOT BETWEEN '9.62' AND '17.02' OR
+    
+    "KC000094" NOT BETWEEN '34.83' AND '42.11' OR
+    "KC000097" NOT BETWEEN '11.26' AND '18.72' OR
+    "KC000104" NOT BETWEEN '34.83' AND '42.11' OR
+    "KC000107" NOT BETWEEN '11.26' AND '18.72' OR
+    
+    "KC000114" NOT BETWEEN '44.19' AND '51.82' OR
+    "KC000117" NOT BETWEEN '13.32' AND '20.81' OR
+    "KC000124" NOT BETWEEN '44.19' AND '51.82' OR
+    "KC000127" NOT BETWEEN '13.32' AND '20.81' OR
+    
+    "KC000134" NOT BETWEEN '53.75' AND '61.7' OR
+    "KC000137" NOT BETWEEN '16.01' AND '23.48' OR
+    "KC000144" NOT BETWEEN '53.75' AND '61.7' OR
+    "KC000147" NOT BETWEEN '16.01' AND '23.48' OR
+    
+    "KC000154" NOT BETWEEN '62.35' AND '70.06' OR
+    "KC000157" NOT BETWEEN '19.72' AND '27.04' OR
+    "KC000164" NOT BETWEEN '62.35' AND '70.06' OR
+    "KC000167" NOT BETWEEN '19.72' AND '27.04' OR
+    
+    "KC000174" NOT BETWEEN '68.85' AND '76.24' OR
+    "KC000177" NOT BETWEEN '24.84' AND '32.08' OR
+    "KC000184" NOT BETWEEN '68.85' AND '76.24' OR
+    "KC000187" NOT BETWEEN '24.84' AND '32.08' OR
+    
+    "KC000194" NOT BETWEEN '73.43' AND '80.7' OR
+    "KC000197" NOT BETWEEN '32.06' AND '39.16' OR
+    "KC000204" NOT BETWEEN '73.43' AND '80.7' OR
+    "KC000207" NOT BETWEEN '32.06' AND '39.16' OR
+    
+    "KC000214" NOT BETWEEN '76.65' AND '83.94' OR
+    "KC000217" NOT BETWEEN '41.03' AND '48.36' OR
+    "KC000224" NOT BETWEEN '76.65' AND '83.94' OR
+    "KC000227" NOT BETWEEN '41.03' AND '48.36' OR
+    
+    "KC000234" NOT BETWEEN '79.05' AND '86.44' OR
+    "KC000237" NOT BETWEEN '50.66' AND '58.49' OR
+    "KC000244" NOT BETWEEN '79.05' AND '86.44' OR
+    "KC000247" NOT BETWEEN '50.66' AND '58.49' OR
+    
+    "KC000254" NOT BETWEEN '81.04' AND '88.54' OR
+    "KC000257" NOT BETWEEN '60.27' AND '68.04' OR
+    "KC000264" NOT BETWEEN '81.04' AND '88.54' OR
+    "KC000267" NOT BETWEEN '60.27' AND '68.04' OR
+    
+    "KC000274" NOT BETWEEN '82.44' AND '90.03' OR
+    "KC000277" NOT BETWEEN '66.95' AND '74.36' OR
+    "KC000284" NOT BETWEEN '82.44' AND '90.03' OR
+    "KC000287" NOT BETWEEN '66.95' AND '74.36' OR
+    
+    "KC000294" NOT BETWEEN '83.69' AND '91.38' OR
+    "KC000297" NOT BETWEEN '72.08' AND '79.28' OR
+    "KC000304" NOT BETWEEN '83.69' AND '91.38' OR
+    "KC000307" NOT BETWEEN '72.08' AND '79.28' OR
+    
+    "KC000314" NOT BETWEEN '84.75' AND '92.51' OR
+    "KC000317" NOT BETWEEN '75.68' AND '82.86' OR
+    "KC000324" NOT BETWEEN '84.75' AND '92.51' OR
+    "KC000327" NOT BETWEEN '85.63' AND '93.44' OR
+    
+    "KC000334" NOT BETWEEN '85.63' AND '93.44' OR
+    "KC000337" NOT BETWEEN '78.29' AND '85.53' OR
+    "KC000344" NOT BETWEEN '85.63' AND '93.44' OR
+    "KC000347" NOT BETWEEN '78.29' AND '85.53') AND
+    dir0 in ('2025','2024','2023')
+) nested_0
