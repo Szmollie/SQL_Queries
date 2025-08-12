@@ -1,0 +1,199 @@
+SELECT "timestamp", unit_id, "testrun_result", "testplan_version",
+"GC00170" as "TCU sG57 -10mm",
+"GC00180" as "TCU sG24 -10mm",
+"GC00190" as "TCU sG13 -10mm",
+"GC00200" as "TCU sG6R -10mm",
+"KC000010" as "K1_1A RELOS 0 mm",
+"KC0000020" as "K2_1A RELOS 0 mm",
+"GC00130" as "TCU sG57 -4mm",
+"GC00140" as "TCU sG24 -4mm",
+"GC00150" as "TCU sG13 -4mm",
+"GC00160" as "TCU sG6R -4mm",
+"KC000011" as "K1_2A RELOS 0 mm",
+"KC000021" as "K2_2A RELOS 0 mm",
+"GC00090" as "TCU sG57 0mm",
+"GC00100" as "TCU sG24 0mm",
+"GC00110" as "TCU sG13 0mm",
+"GC00120" as "TCU sG6R 0mm",
+"KC000030" as "K1_1A RELOS 1.8 mm",
+"KC000040" as "K2_1A RELOS 1.8 mm",
+"GC00050" as "TCU sG57 4mm",
+"GC00060" as "TCU sG24 4mm",
+"GC00070" as "TCU sG13 4mm",
+"GC00080" as "TCU sG6R 4mm",
+"KC000110" as "K1_1A RELOS 9.38 mm",
+"KC000120" as "K2_1A RELOS 9.38 mm",
+"GC000010" as "TCU sG57 10mm",
+"GC000020" as "TCU sG24 10mm",
+"GC000030" as "TCU sG13 10mm",
+"GC000040" as "TCU sG6R 10mm",
+"KLM000011" as "K1_1A RELOS 0.0 mm",
+"KLM000021" as "K2_1A RELOS 0.0 mm",  
+"station" as "TestStation(L0xS0x)",
+'' as "ChangeTiming"
+From FlatTable.DEB.Advanced."DEB_STATION_DQ200RTCAL_L01S01_VAL_ALL"
+WHERE 
+//unit_id in ('A2C775864032504231163E','A2C775864032504231057E')AND //Change ID list to current gold ID list
+dir0 = '2025' and //change to gold run year
+dir1 = '07' and//change to gold run month
+Dir2 in ('15') //change to gold run date
+
+union SELECT "timestamp", unit_id, "testrun_result", "testplan_version",
+"GC00170" as "TCU sG57 -10mm",
+"GC00180" as "TCU sG24 -10mm",
+"GC00190" as "TCU sG13 -10mm",
+"GC00200" as "TCU sG6R -10mm",
+"KC000010" as "K1_1A RELOS 0 mm",
+"KC0000020" as "K2_1A RELOS 0 mm",
+"GC00130" as "TCU sG57 -4mm",
+"GC00140" as "TCU sG24 -4mm",
+"GC00150" as "TCU sG13 -4mm",
+"GC00160" as "TCU sG6R -4mm",
+"KC000011" as "K1_2A RELOS 0 mm",
+"KC000021" as "K2_2A RELOS 0 mm",
+"GC00090" as "TCU sG57 0mm",
+"GC00100" as "TCU sG24 0mm",
+"GC00110" as "TCU sG13 0mm",
+"GC00120" as "TCU sG6R 0mm",
+"KC000030" as "K1_1A RELOS 1.8 mm",
+"KC000040" as "K2_1A RELOS 1.8 mm",
+"GC00050" as "TCU sG57 4mm",
+"GC00060" as "TCU sG24 4mm",
+"GC00070" as "TCU sG13 4mm",
+"GC00080" as "TCU sG6R 4mm",
+"KC000110" as "K1_1A RELOS 9.38 mm",
+"KC000120" as "K2_1A RELOS 9.38 mm",
+"GC000010" as "TCU sG57 10mm",
+"GC000020" as "TCU sG24 10mm",
+"GC000030" as "TCU sG13 10mm",
+"GC000040" as "TCU sG6R 10mm",
+"KLM000011" as "K1_1A RELOS 0.0 mm",
+"KLM000021" as "K2_1A RELOS 0.0 mm",  
+"station" as "TestStation(L0xS0x)",
+'' as "ChangeTiming"
+From FlatTable.DEB.Advanced."DEB_STATION_DQ200RTCAL_L02S01_VAL_ALL"
+WHERE 
+//unit_id in ('A2C775864032504231163E','A2C775864032504231057E')AND //Change ID list to current gold ID list
+dir0 = '2025' and//change to gold run year
+dir1 = '07' and//change to gold run month
+Dir2 in ('15') //change to gold run date
+
+union SELECT "timestamp", unit_id, "testrun_result", "testplan_version",
+"GC00170" as "TCU sG57 -10mm",
+"GC00180" as "TCU sG24 -10mm",
+"GC00190" as "TCU sG13 -10mm",
+"GC00200" as "TCU sG6R -10mm",
+"KC000010" as "K1_1A RELOS 0 mm",
+"KC0000020" as "K2_1A RELOS 0 mm",
+"GC00130" as "TCU sG57 -4mm",
+"GC00140" as "TCU sG24 -4mm",
+"GC00150" as "TCU sG13 -4mm",
+"GC00160" as "TCU sG6R -4mm",
+"KC000011" as "K1_2A RELOS 0 mm",
+"KC000021" as "K2_2A RELOS 0 mm",
+"GC00090" as "TCU sG57 0mm",
+"GC00100" as "TCU sG24 0mm",
+"GC00110" as "TCU sG13 0mm",
+"GC00120" as "TCU sG6R 0mm",
+"KC000030" as "K1_1A RELOS 1.8 mm",
+"KC000040" as "K2_1A RELOS 1.8 mm",
+"GC00050" as "TCU sG57 4mm",
+"GC00060" as "TCU sG24 4mm",
+"GC00070" as "TCU sG13 4mm",
+"GC00080" as "TCU sG6R 4mm",
+"KC000110" as "K1_1A RELOS 9.38 mm",
+"KC000120" as "K2_1A RELOS 9.38 mm",
+"GC000010" as "TCU sG57 10mm",
+"GC000020" as "TCU sG24 10mm",
+"GC000030" as "TCU sG13 10mm",
+"GC000040" as "TCU sG6R 10mm",
+"KLM000011" as "K1_1A RELOS 0.0 mm",
+"KLM000021" as "K2_1A RELOS 0.0 mm",  
+"station" as "TestStation(L0xS0x)",
+'' as "ChangeTiming"
+From FlatTable.DEB.Advanced."DEB_STATION_DQ200RTCAL_L02S02_VAL_ALL"
+WHERE 
+//unit_id in ('A2C775864032504231163E','A2C775864032504231057E')AND //Change ID list to current gold ID list
+dir0 = '2025' and//change to gold run year
+dir1 = '07' and//change to gold run month
+Dir2 in ('15') //change to gold run date
+
+union SELECT "timestamp", unit_id, "testrun_result", "testplan_version",
+"GC00170" as "TCU sG57 -10mm",
+"GC00180" as "TCU sG24 -10mm",
+"GC00190" as "TCU sG13 -10mm",
+"GC00200" as "TCU sG6R -10mm",
+"KC000010" as "K1_1A RELOS 0 mm",
+"KC0000020" as "K2_1A RELOS 0 mm",
+"GC00130" as "TCU sG57 -4mm",
+"GC00140" as "TCU sG24 -4mm",
+"GC00150" as "TCU sG13 -4mm",
+"GC00160" as "TCU sG6R -4mm",
+"KC000011" as "K1_2A RELOS 0 mm",
+"KC000021" as "K2_2A RELOS 0 mm",
+"GC00090" as "TCU sG57 0mm",
+"GC00100" as "TCU sG24 0mm",
+"GC00110" as "TCU sG13 0mm",
+"GC00120" as "TCU sG6R 0mm",
+"KC000030" as "K1_1A RELOS 1.8 mm",
+"KC000040" as "K2_1A RELOS 1.8 mm",
+"GC00050" as "TCU sG57 4mm",
+"GC00060" as "TCU sG24 4mm",
+"GC00070" as "TCU sG13 4mm",
+"GC00080" as "TCU sG6R 4mm",
+"KC000110" as "K1_1A RELOS 9.38 mm",
+"KC000120" as "K2_1A RELOS 9.38 mm",
+"GC000010" as "TCU sG57 10mm",
+"GC000020" as "TCU sG24 10mm",
+"GC000030" as "TCU sG13 10mm",
+"GC000040" as "TCU sG6R 10mm",
+"KLM000011" as "K1_1A RELOS 0.0 mm",
+"KLM000021" as "K2_1A RELOS 0.0 mm", 
+"station" as "TestStation(L0xS0x)",
+'' as "ChangeTiming"
+From FlatTable.DEB.Advanced."DEB_STATION_DQ200RTCAL_L02S03_VAL_ALL"
+WHERE 
+//unit_id in ('A2C775864032504231163E','A2C775864032504231057E')AND //Change ID list to current gold ID list
+dir0 = '2025' and//change to gold run year
+dir1 = '07' and//change to gold run month
+Dir2 in ('15') //change to gold run date
+
+union SELECT "timestamp", unit_id, "testrun_result", "testplan_version",
+"GC00170" as "TCU sG57 -10mm",
+"GC00180" as "TCU sG24 -10mm",
+"GC00190" as "TCU sG13 -10mm",
+"GC00200" as "TCU sG6R -10mm",
+"KC000010" as "K1_1A RELOS 0 mm",
+"KC0000020" as "K2_1A RELOS 0 mm",
+"GC00130" as "TCU sG57 -4mm",
+"GC00140" as "TCU sG24 -4mm",
+"GC00150" as "TCU sG13 -4mm",
+"GC00160" as "TCU sG6R -4mm",
+"KC000011" as "K1_2A RELOS 0 mm",
+"KC000021" as "K2_2A RELOS 0 mm",
+"GC00090" as "TCU sG57 0mm",
+"GC00100" as "TCU sG24 0mm",
+"GC00110" as "TCU sG13 0mm",
+"GC00120" as "TCU sG6R 0mm",
+"KC000030" as "K1_1A RELOS 1.8 mm",
+"KC000040" as "K2_1A RELOS 1.8 mm",
+"GC00050" as "TCU sG57 4mm",
+"GC00060" as "TCU sG24 4mm",
+"GC00070" as "TCU sG13 4mm",
+"GC00080" as "TCU sG6R 4mm",
+"KC000110" as "K1_1A RELOS 9.38 mm",
+"KC000120" as "K2_1A RELOS 9.38 mm",
+"GC000010" as "TCU sG57 10mm",
+"GC000020" as "TCU sG24 10mm",
+"GC000030" as "TCU sG13 10mm",
+"GC000040" as "TCU sG6R 10mm",
+"KLM000011" as "K1_1A RELOS 0.0 mm",
+"KLM000021" as "K2_1A RELOS 0.0 mm",  
+"station" as "TestStation(L0xS0x)",
+'' as "ChangeTiming"
+From FlatTable.DEB.Advanced."DEB_STATION_DQ200RTCAL_L02S04_VAL_ALL"
+WHERE 
+//unit_id in ('A2C775864032504231163E','A2C775864032504231057E')AND //Change ID list to current gold ID list
+dir0 = '2025' and//change to gold run year
+dir1 = '07' and//change to gold run month
+Dir2 in ('15') //change to gold run date
