@@ -1,0 +1,138 @@
+  SELECT "timestamp", unit_id, "testrun_result", 
+  "102050" AS "GS13zero",
+  "102060" as "GS24zero",
+  "102070" AS "GS57zero",
+  "102080" as "GS6Rzero",
+  "102090" AS "KV1 zero",
+  "102100" as "KV2 zero",
+  "400200" as "GS13Neutral",
+  "400210" as "GS24Neutral",
+  "400220" as "GS57Neutral", 
+  "400230" as "GS6RNeutral",
+  //"400240" as "KV1Neutral", 
+  //"400250" as "KV2Neutral",
+  "103030" as "GS13End",
+  "103040" as "GS24End",
+  "103130" as "GS57End",
+  "103140" as "GS6REnd",
+  "104020" as "KV1End",
+  "104070" as "KV2End",
+  "station" as "TestStation(L0xS0x)",
+  '' as "ChangeTiming"
+  From FlatTable.DEB.Advanced."DEB_STATION_DQEOL117_L01S03_Val_ALL"
+  Where
+  unit_id = 'A2C775864032504170509E' and
+  dir0 = '2025' //change to gold run year
+  And dir1 = '07' //change to gold run month
+  And Dir2 in ('16') //change to gold run date
+  
+  union SELECT "timestamp", unit_id, "testrun_result", 
+  "102050" AS "GS13zero",
+  "102060" as "GS24zero",
+  "102070" AS "GS57zero",
+  "102080" as "GS6Rzero",
+  "102090" AS "KV1 zero",
+  "102100" as "KV2 zero",
+  "400200" as "GS13Neutral",
+  "400210" as "GS24Neutral",
+  "400220" as "GS57Neutral", 
+  "400230" as "GS6RNeutral",
+  //"400240" as "KV1Neutral", 
+  //"400250" as "KV2Neutral",
+  "103030" as "GS13End",
+  "103040" as "GS24End",
+  "103130" as "GS57End",
+  "103140" as "GS6REnd",
+  "104020" as "KV1End",
+  "104070" as "KV2End",
+  "station" as "TestStation(L0xS0x)",
+  '' as "ChangeTiming"
+  From FlatTable.DEB.Advanced."DEB_STATION_DQEOL117_L02S01_Val_ALL"
+  Where
+  unit_id = 'A2C775864032504170509E' and
+  dir0 = '2025' //change to gold run year
+  And dir1 = '07' //change to gold run month
+  And Dir2 in ('16') //change to gold run date
+  
+  UNION SELECT "timestamp", unit_id, "testrun_result", 
+  "102050" AS "GS13zero",
+  "102060" as "GS24zero",
+  "102070" AS "GS57zero",
+  "102080" as "GS6Rzero",
+  "102090" AS "KV1 zero",
+  "102100" as "KV2 zero",
+  "400200" as "GS13Neutral",
+  "400210" as "GS24Neutral",
+  "400220" as "GS57Neutral", 
+  "400230" as "GS6RNeutral",
+  //"400240" as "KV1Neutral", 
+  //"400250" as "KV2Neutral",
+  "103030" as "GS13End",
+  "103040" as "GS24End",
+  "103130" as "GS57End",
+  "103140" as "GS6REnd",
+  "104020" as "KV1End",
+  "104070" as "KV2End",
+  "station" as "TestStation(L0xS0x)",
+  '' as "ChangeTiming"
+  From FlatTable.DEB.Advanced."DEB_STATION_DQEOL117_L02S02_Val_ALL"
+  Where
+  unit_id = 'A2C775864032504170509E' and
+  dir0 = '2025' //change to gold run year
+  And dir1 = '07' //change to gold run month
+  And Dir2 in ('16') //change to gold run date
+  /*
+  UNION SELECT "timestamp", unit_id, "testrun_result", 
+  "102050" AS "GS13zero",
+  "102060" as "GS24zero",
+  "102070" AS "GS57zero",
+  "102080" as "GS6Rzero",
+  "102090" AS "KV1 zero",
+  "102100" as "KV2 zero",
+  "400200" as "GS13Neutral",
+  "400210" as "GS24Neutral",
+  "400220" as "GS57Neutral", 
+  "400230" as "GS6RNeutral",
+  //"400240" as "KV1Neutral", 
+  //"400250" as "KV2Neutral",
+  "103030" as "GS13End",
+  "103040" as "GS24End",
+  "103130" as "GS57End",
+  "103140" as "GS6REnd",
+  "104020" as "KV1End",
+  "104070" as "KV2End",
+  "station" as "TestStation(L0xS0x)",
+  '' as "ChangeTiming"
+  From FlatTable.DEB.Advanced."DEB_STATION_DQEOL117_L02S03_Val_ALL"
+  Where
+  dir0 = '2025' //change to gold run year
+  And dir1 = '07' //change to gold run month
+  And Dir2 in ('16') //change to gold run date
+  
+  UNION SELECT "timestamp", unit_id, "testrun_result", 
+  "102050" AS "GS13zero",
+  "102060" as "GS24zero",
+  "102070" AS "GS57zero",
+  "102080" as "GS6Rzero",
+  "102090" AS "KV1 zero",
+  "102100" as "KV2 zero",
+  "400200" as "GS13Neutral",
+  "400210" as "GS24Neutral",
+  "400220" as "GS57Neutral", 
+  "400230" as "GS6RNeutral",
+  //"400240" as "KV1Neutral", 
+  //"400250" as "KV2Neutral",
+  "103030" as "GS13End",
+  "103040" as "GS24End",
+  "103130" as "GS57End",
+  "103140" as "GS6REnd",
+  "104020" as "KV1End",
+  "104070" as "KV2End",
+  "station" as "TestStation(L0xS0x)",
+  '' as "ChangeTiming"
+  From FlatTable.DEB.Advanced."DEB_STATION_DQEOL117_L02S04_Val_ALL"
+  Where
+  dir0 = '2025' //change to gold run year
+  And dir1 = '07' //change to gold run month
+  And Dir2 in ('16') //change to gold run date
+  */
