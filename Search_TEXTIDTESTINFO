@@ -1,0 +1,14 @@
+  SELECT "timestamp", "unit_id", "test_id" , "test_id_info"
+  
+   FROM FlatTable.DEB.Advanced.DEB_EVA_RAW_ALL
+   WHERE
+    ("testplan_name" = 'DQ200_PROG2'OR "testplan_name" = 'DQ200_PROG2_AUTO') AND
+ 
+  "test_id_info" like '%Every ID for MES%' AND
+  "test_id" like '49.1'AND
+
+    dir0='2025' and
+
+    dir1 in ('03') and//add month
+
+    dir2 in ('07') //add day
